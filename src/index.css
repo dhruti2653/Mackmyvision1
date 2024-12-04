@@ -1,0 +1,26 @@
+@keyframes scroll-image {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes scroll-image-reverse {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .animate-scroll-image {
+    animation: scroll-image 10s linear infinite;
+  }
+  
+  .animate-scroll-image-reverse {
+    animation: scroll-image-reverse 10s linear infinite;
+  }
+  
