@@ -3,30 +3,30 @@ import React, { useEffect, useState } from "react";
 const Testimonial = () => {
   const testimonials = [
     {
-      name: "Steve H.",
-      photo: "/images/testo-1.jpg",
-      text: "“Honest, hard-working, great graphical taste, morals. Everything you wish to find in a freelancer. One of the best I have ever worked with.”",
+      name: "Sivay Sensor",
+      photo: "/images/sivaysensor.jpeg",
+      text: "“Working with MackMyVision to design our website for Sivay Sensor was a fantastic experience. Their team delivered a seamless, modern, and highly functional site that perfectly reflects our brand. The design is both visually appealing and user-friendly across all devices. We couldn’t be happier with the results!”",
     },
     {
-      name: "Moaz A.",
-      photo: "/images/testo-3.jpg",
-      text: "“They are the best game developer; they over-delivered! Very satisfied with the quality of work and professionalism. Highly recommend.”",
+      name: "First Care Clinic",
+      photo: "/images/firstcare.png",
+      text: "“We partnered with MackMyVision to redesign our website for First Care Clinic, and the experience was exceptional. Their team delivered a modern, user-friendly design that perfectly represents our brand and services. The responsiveness and professionalism of their team exceeded our expectations. Highly recommended!”",
     },
     {
-      name: "Anna B.",
-      photo: "/images/testo-2.jpg",
-      text: "“Absolutely amazing experience. Professional and on time. Would recommend to anyone! Very satisfied with the quality of work and professionalism. Highly recommend.”",
+      name: "Maruti Nandan",
+      photo: "/images/marutinandan.jpeg",
+      text: "“Partnering with MackMyVision to revamp our website for Maruti Nandan Survey was a fantastic experience. Their team delivered a modern, user-friendly website that aligns perfectly with our brand. The professionalism, attention to detail, and timely delivery exceeded our expectations. We highly recommend MackMyVision for any web design project!”",
     },
-    {
-      name: "John D.",
-      photo: "/images/testo-4.jpg",
-      text: "“Great communication and great results. I am a repeat customer! Very satisfied with the quality of work and professionalism. Highly recommend.”",
-    },
-    {
-      name: "Sara K.",
-      photo: "/images/testo-6.jpg",
-      text: "“Very satisfied with the quality of work and professionalism. Highly recommend. Very satisfied with the quality of work and professionalism. Highly recommend.”",
-    },
+    // {
+    //   name: "John D.",
+    //   photo: "/images/testo-4.jpg",
+    //   text: "“Great communication and great results. I am a repeat customer! Very satisfied with the quality of work and professionalism. Highly recommend.”",
+    // },
+    // {
+    //   name: "Sara K.",
+    //   photo: "/images/testo-6.jpg",
+    //   text: "“Very satisfied with the quality of work and professionalism. Highly recommend. Very satisfied with the quality of work and professionalism. Highly recommend.”",
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,16 +71,17 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full px-4"
+              className="flex-shrink-0 w-full  px-4"
               style={{ width: "100%" }}
             >
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <div className="flex flex-col items-center text-center">
-                  <img
-                    src={testimonial.photo}
-                    alt={testimonial.name}
-                    className="w-24 h-24 rounded-full border-2 border-blue-500 mb-4 object-cover"
-                  />
+                <img
+  src={testimonial.photo}
+  alt={testimonial.name}
+  className="w-24 h-24 rounded-full border-2 border-blue-500 mb-4 object-contain"
+/>
+
                   <h3 className="text-xl font-semibold">{testimonial.name}</h3>
                   <p className="mt-3 text-gray-600 italic">{testimonial.text}</p>
                 </div>

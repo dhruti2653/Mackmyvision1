@@ -8,12 +8,12 @@ const OurServices = () => {
         <h2 className="text-4xl font-medium mb-3 text-[#025add]">
           Our Services
         </h2>
-        <p className=" text-xl px-10 text-gray-600">
+        <p className=" text-xl lg:px-10 text-gray-600">
           As one of the leading software development companies, we at Vasundhara have a diverse range of services for our clients, where we operate in these core areas.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-32 sm:gap-10 md:gap-20   ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-32 sm:gap-10 md:gap-20 px-6  ">
         {/* First Service */}
         <div className=" lg:-mt-10 col-xl-4 col-lg-4 col-md-12 col-sm-12">
           <div className="service-box lg:mt-36 mt-8 w-full max-w-sm mx-auto  rounded-lg shadow-lg overflow-hidden">
@@ -88,7 +88,7 @@ const OurServices = () => {
         </div>
       </div>
       {/* Third Service */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-96 sm:gap-10 md:gap-44   ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-96 sm:gap-10 px-6 md:gap-44   ">
         {/* First Service */}
         <div className="service-box w-full max-w-sm mx-auto rounded-lg mt-20 shadow-lg ">
           <div className="service-tech-box bg-purple-100 p-6 rounded-lg relative border-2 border-purple-200">

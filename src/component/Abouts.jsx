@@ -12,7 +12,7 @@ const CustomPostItem = ({ title, description, image, link }) => {
         href={link}
         className="custom-posts--link block relative overflow-hidden rounded-lg"
       >
-        {/* Image Section */}
+        {/* Image Section Above the Title */}
         <div className="custom-posts--thumb relative h-64">
           <img
             loading="lazy"
@@ -27,16 +27,19 @@ const CustomPostItem = ({ title, description, image, link }) => {
           className="custom-posts--content absolute inset-0 flex flex-col justify-end bg-gradient-to-t 
           from-black/80 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
         >
+          {/* Title */}
           <h3 className="custom-posts--title text-xl font-semibold text-white mb-2">
             {title}
           </h3>
+
+          {/* Description */}
           <p className="text-sm text-gray-300 mb-4">{description}</p>
 
           {/* Call-to-Action */}
           <span
             className="link-more text-blue-500 font-medium inline-flex items-center group-hover:underline"
           >
-            About Me
+            Read More
             <svg
               className="w-4 h-4 ml-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -81,15 +84,13 @@ const HoverEffectGrid = () => {
       description:
         "Deliver excellent service and keep your customers happy.",
       image:
-     "https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/custom-post-thumb-1.jpg",
+        "https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/custom-post-thumb-1.jpg",
       link: "https://fieldedge.com/field-service-software/",
     },
   ];
 
   return (
     <div className="container mx-auto px-4 pt-14">
-
-
       <div className="flex flex-wrap -mx-4">
         {posts.map((post, index) => (
           <CustomPostItem
