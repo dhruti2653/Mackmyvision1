@@ -1,4 +1,4 @@
-import { FaSearch, FaCog, FaCode, FaClipboardList } from 'react-icons/fa';
+// import { FaSearch, FaCog, FaCode, FaClipboardList } from 'react-icons/fa';
 
 const BoxComponent = () => {
   return (

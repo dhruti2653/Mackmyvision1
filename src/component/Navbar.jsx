@@ -1,6 +1,6 @@
 // src/component/Navbar.js
 import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt,  FaMapMarkerAlt } from 'react-icons/fa';
 import { FaInstagram, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 const Navbar = () => {
