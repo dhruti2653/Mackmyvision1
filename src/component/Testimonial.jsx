@@ -41,15 +41,15 @@ const Testimonial = () => {
   }, [testimonials.length]);
 
   // Manual navigation to the previous/next testimonial
-  const goToPrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
+  // const goToPrev = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+  //   );
+  // };
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
+  // const goToNext = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  // };
 
   return (
     <section className="bg-blue-100 py-10">

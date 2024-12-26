@@ -6,7 +6,7 @@ const Contactdetail = () => {
     <div className="container mx-auto px-6 py-12">
       {/* Title and Description Section */}
       <div className="flex flex-col items-center mb-12 text-center">
-        <h2 className="text-4xl font-medium text-[#025add] mb-4">Our Direction</h2>
+        <h2 className="text-4xl font-medium mt-4 text-[#025add] mb-4">Our Direction</h2>
         <h2 className="text-3xl font-bold mb-4 leading-tight">
           Get in touch with us. We love talking about digital strategy
         </h2>
@@ -16,7 +16,7 @@ const Contactdetail = () => {
       </div>
 
       {/* Image and Contact Details Section */}
-      <div className="flex flex-col lg:flex-row lg:pr-16 pr-0 lg:items-center mb-12">
+      <div className="flex flex-col lg:flex-row lg:pr-16 pr-0 pt-6 lg:items-center mb-12">
         {/* Image Section */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <img

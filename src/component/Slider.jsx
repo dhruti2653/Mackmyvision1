@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
+// import { FaTwitter, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 // import heroBg from '../images/hero-bg.png';
 
 const Slider = () => {

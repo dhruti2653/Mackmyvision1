@@ -11,6 +11,10 @@ const Header = () => {
       : "text-gray-700 hover:text-blue-600"; // Default link style
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle mobile menu
+  };
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +31,7 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Center: Menu */}
+          {/* Center: Menu for Desktop */}
           <nav className="hidden font-medium text-xl sm:flex space-x-8">
             <Link to="/" className={getLinkClasses("/")}>
               Home
@@ -38,7 +42,6 @@ const Header = () => {
             <Link to="/services" className={getLinkClasses("/services")}>
               Services
             </Link>
-           
             <Link to="/contactpage" className={getLinkClasses("/contactpage")}>
               Contact
             </Link>
@@ -57,7 +60,7 @@ const Header = () => {
           {/* Mobile Hamburger Button */}
           <div className="sm:hidden flex items-center">
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={toggleMenu} // Toggle menu on button click
               className="text-gray-700 hover:text-blue-600"
             >
               <svg
@@ -78,48 +81,75 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
-        {isMenuOpen && (
-          <div className="sm:hidden bg-white shadow-md space-y-4 py-4">
-            <Link to="/" className={`${getLinkClasses("/")} block text-center`}>
+        {/* Mobile Navigation Menu (Slide-in for small screens) */}
+        <div
+          className={`fixed top-0 right-0 h-full w-3/4 bg-[#0e2336] shadow-lg z-50 transform ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out md:hidden`}
+        >
+          {/* Logo and Close Button */}
+          <div className="flex items-center justify-between px-4 py-4 bg-[#0e2336]">
+            <div className="flex items-center lg:hidden">
+              <Link to={"/"} className="flex items-center">
+                <img
+                  src="../images/logo.jpeg"
+                  alt="Logo"
+                  className="h-16 w-16 rounded-full"
+                />
+                <span className="ml-3 text-lg font-medium lg:text-xl text-white">
+                  Maruti Nandan
+                </span>
+              </Link>
+            </div>
+
+            <button
+              onClick={toggleMenu} // Close menu when clicked
+              className="text-xl text-white focus:outline-none"
+            >
+              ✕
+            </button>
+          </div>
+
+          {/* Mobile Navigation Links */}
+          <nav className="flex flex-col items-start px-6 mt-6 space-y-4 text-lg font-medium">
+            <Link
+              to="/"
+              className={`w-full py-2 hover:text-[#F76B00] hover:underline ${
+                location.pathname === "/" ? "text-[#F76B00]" : "text-white"
+              }`}
+              onClick={toggleMenu}
+            >
               Home
             </Link>
             <Link
               to="/aboutpage"
-              className={`${getLinkClasses("/aboutpage")} block text-center`}
+              className={`w-full py-2 hover:text-[#F76B00] hover:underline ${
+                location.pathname === "/aboutpage" ? "text-[#F76B00]" : "text-white"
+              }`}
+              onClick={toggleMenu}
             >
               About
             </Link>
             <Link
               to="/services"
-              className={`${getLinkClasses("/services")} block text-center`}
+              className={`w-full py-2 hover:text-[#F76B00] hover:underline ${
+                location.pathname === "/services" ? "text-[#F76B00]" : "text-white"
+              }`}
+              onClick={toggleMenu}
             >
               Services
             </Link>
             <Link
-              to="/blogpage"
-              className={`${getLinkClasses("/blogpage")} block text-center`}
-            >
-              Blog
-            </Link>
-            <Link
               to="/contactpage"
-              className={`${getLinkClasses(
-                "/contactpage"
-              )} block text-center`}
+              className={`w-full py-2 hover:text-[#F76B00] hover:underline ${
+                location.pathname === "/contactpage" ? "text-[#F76B00]" : "text-white"
+              }`}
+              onClick={toggleMenu}
             >
-              Contact
+              Contact Us
             </Link>
-
-            {/* Mobile: Get Support button inside the dropdown */}
-            <Link
-              to="/contactpage"
-              className="block text-center text-white bg-blue-600 py-2 px-4 rounded hover:bg-blue-700 mt-4"
-            >
-              Get Support
-            </Link>
-          </div>
-        )}
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -35,7 +35,7 @@ const WhyVasundhara = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto lg:mb-10 mb-0 p-6">
       {/* Title Section */}
       <div className="flex justify-center mb-8">
         <button

@@ -41,8 +41,7 @@ const Footer = () => {
         {/* Column 1 - Detail Part - 50% Width (spans 3 columns on larger screens) */}
         <div className="col-span-1 md:col-span-3">
           <p className="text-xl text-gray-400">
-            We are committed to providing exceptional services in medical care and more.
-          </p>
+           MakeMyVision is a leading provider of cutting-edge information technology services and innovative solutions. We are committed to delivering transformative IT services that empower businesses to thrive in the digital age.          </p>
         </div>
 
         {/* Column 2 - Home and Services Columns for Mobile View */}
