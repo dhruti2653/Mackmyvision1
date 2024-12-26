@@ -50,7 +50,7 @@ const Slider = () => {
         <h1 className="text-5xl md:text-6xl font-bold">
           100<span className="text-blue-500">%</span>
         </h1>
-        <p className="text-xl md:text-2xl font-semibold mt-2">Customer Satisfaction</p>
+        <p className="text-xl md:text-2xl font-semibold mt-2">Customers Satisfaction</p>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-700">
         <div className="h-1 bg-blue-500 w-1/4"></div>
