@@ -38,9 +38,7 @@ const Header = () => {
             <Link to="/services" className={getLinkClasses("/services")}>
               Services
             </Link>
-            <Link to="/blogpage" className={getLinkClasses("/blogpage")}>
-              Blog
-            </Link>
+           
             <Link to="/contactpage" className={getLinkClasses("/contactpage")}>
               Contact
             </Link>

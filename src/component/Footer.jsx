@@ -72,19 +72,19 @@ const Footer = () => {
             <ul className="space-y-2 list-none">
               <li className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
-                <a href="/service1" className="text-gray-400 hover:text-white">Service 1</a>
+                <a href="/services" className="text-gray-400 hover:text-white">Web Development</a>
               </li>
               <li className="relative pl-4 space-x-1">
-                <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
-                <a href="/service2" className="text-gray-400 hover:text-white">Service 2</a>
+                <span className="absolute left-0 top-1/4 transform -translate-y-1/2 text-gray-400">→</span>
+                <a href="/services" className="text-gray-400 hover:text-white">Mobile App Development</a>
               </li>
               <li className="relative pl-4 space-x-1">
-                <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
-                <a href="/service3" className="text-gray-400 hover:text-white">Service 3</a>
+                <span className="absolute left-0 top-1/4 transform -translate-y-1/2 text-gray-400">→</span>
+                <a href="/services" className="text-gray-400 hover:text-white">Data Science Development</a>
               </li>
               <li className="relative pl-4 space-x-1">
-                <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
-                <a href="/service4" className="text-gray-400 hover:text-white">Service 4</a>
+                <span className="absolute left-0 top-1/4 transform -translate-y-1/2 text-gray-400">→</span>
+                <a href="/services" className="text-gray-400 hover:text-white">Web Design Developers</a>
               </li>
             </ul>
           </div>

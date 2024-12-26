@@ -9,17 +9,39 @@ const ImageColumn = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row mt-24 items-center gap-16 px-6 lg:px-16 overflow-hidden">
+    <div className="flex flex-col lg:flex-row lg:mt-24 mt-10 items-center gap-16 px-6 lg:px-16 overflow-hidden">
       {/* Content Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <h2 className="text-4xl font-medium text-[#025add] mb-4">About Us</h2>
-        <h3 className="text-3xl font-medium mb-4">
+        <h3 className="lg:text-3xl text-xl font-medium mb-4">
           Manage conversations with leads and customers at scale
         </h3>
         <p className="text-gray-600 mb-6">
           Codeline infotech was founded to deliver technology solutions that positively impacted businesses, versus just technology solutions that were technically excellent but may not have delivered on the key business objectives.
         </p>
-        <div className="aos aos-init aos-animate" data-aos="fade-up">
+       
+
+<div className="flex flex-col md:flex-col w-full items-start text-black pb-7 relative">
+  {/* Header and Percentage */}
+  <div className="flex w-full justify-between items-center mb-4">
+  <h1 className="text-xl md:text-1xl font-bold">
+    Project success percentage rate
+  </h1>
+  <p className="text-xl md:text-2xl font-semibold">75%</p>
+</div>
+
+
+  {/* Progress Bar */}
+  <div className="w-full bg-gray-300 rounded-full h-4 relative">
+    <div
+      className="bg-blue-500 h-4 rounded-full progress-animated"
+      style={{ width: "75%" }}
+    ></div>
+  
+  </div>
+</div>
+
+        <div className="aos aos-init aos-animate mt-5" data-aos="fade-up">
           <a
             href="/aboutpage"
             className="btn_primary inline-flex items-center gap-2 px-6 py-3 text-white text-base font-medium rounded-lg 
