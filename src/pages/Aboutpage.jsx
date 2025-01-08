@@ -1,17 +1,17 @@
 import React from 'react';
 import About from '../component/About';
-import Abouts from '../component/Abouts';
+// import Abouts from '../component/Abouts';
 import Whymmv from '../component/Whymmv';
 import AboutUs from '../component/Aboutus';
-// import FounderCard from '../component/FounderCard';
+import MeetFounders from '../component/Meetfounder';
 
 
 const AboutPage = () => {
     return (
       <div>
         <AboutUs />
-        {/* <FounderCard /> */}
-        <Abouts /> {/* Test rendering Abouts */}
+        {/* <Abouts /> Test rendering Abouts */}
+        <MeetFounders />
         <About /> {/* Test rendering About */}
         <Whymmv /> {/* Test rendering Whymmv */}
       </div>

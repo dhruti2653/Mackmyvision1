@@ -50,7 +50,7 @@ const Header = () => {
           {/* Right: Button (Always visible) */}
           <div className="hidden sm:flex">
             <Link
-              to="/contactpage"
+              to="/support"
               className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
             >
               Get Support

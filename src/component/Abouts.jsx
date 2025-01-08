@@ -22,21 +22,23 @@ const CustomPostItem = ({ title, description, image, link }) => {
           />
         </div>
 
+   
+
         {/* Content Section */}
         <div
           className="custom-posts--content absolute inset-0 flex flex-col justify-end bg-gradient-to-t 
           from-black/80 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
         >
           {/* Title */}
-          <h3 className="custom-posts--title text-xl font-semibold text-white mb-2">
+          {/* <h3 className="custom-posts--title text-xl font-semibold text-white mb-2">
             {title}
-          </h3>
+          </h3> */}
 
           {/* Description */}
-          <p className="text-sm text-gray-300 mb-4">{description}</p>
+          <p className="text-xl text-gray-100 mb-4">{description}</p>
 
           {/* Call-to-Action */}
-          <span
+          {/* <span
             className="link-more text-blue-500 font-medium inline-flex items-center group-hover:underline"
           >
             Read More
@@ -54,9 +56,15 @@ const CustomPostItem = ({ title, description, image, link }) => {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </span>
+          </span> */}
         </div>
       </a>
+      {/* Title Section Below the Image */}
+   <div className="py-2 border-2 border-t-0 rounded-lg">
+          <h3 className="custom-posts--title text-xl font-semibold text-center  text-gray-800 group-hover:text-blue-500 transition-colors duration-300">
+            {title}
+          </h3>
+        </div>
     </div>
   );
 };
@@ -64,7 +72,7 @@ const CustomPostItem = ({ title, description, image, link }) => {
 const HoverEffectGrid = () => {
   const posts = [
     {
-      title: "See what FieldEdge can do for your business!",
+      title: "Hira patel",
       description:
         "See why FieldEdge is the trusted solution for thousands of businesses across the nation.",
       image:
@@ -72,7 +80,7 @@ const HoverEffectGrid = () => {
       link: "https://fieldedge.com/field-service-software/",
     },
     {
-      title: "Streamline Your Operations",
+      title: "mahi korat",
       description:
         "Simplify tasks with FieldEdge's powerful scheduling tools.",
       image:
@@ -80,7 +88,7 @@ const HoverEffectGrid = () => {
       link: "https://fieldedge.com/scheduling/",
     },
     {
-      title: "Boost Customer Satisfaction",
+      title: "rahi patel",
       description:
         "Deliver excellent service and keep your customers happy.",
       image:

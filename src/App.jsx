@@ -9,6 +9,7 @@ import Aboutpage from './pages/Aboutpage'; // Correct path to Aboutus component
 import Services from './pages/Services';
 import Blogpage from './pages/Blogpage';
 import Contactpage from './pages/Contactpage';
+import Support from './component/Support'
 
 // Home Component with About Section
 // const Home = () => (
@@ -38,6 +39,8 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/blogpage" element={<Blogpage />} />
           <Route path="/contactpage" element={<Contactpage />} />
+          <Route path='/support' element={<Support />} />
+
           {/* <Route path="*" element={<NotFound />} />  */}
         </Routes>
       </main>
