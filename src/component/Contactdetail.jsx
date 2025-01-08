@@ -37,7 +37,7 @@ const Contactdetail = () => {
                       <FiMapPin size={30} className="text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg">Location</h4>
+                      <h4 className="font-semibold text-xl">Location</h4>
                     </div>
                   </div>
                   <div className="text">
@@ -46,7 +46,7 @@ const Contactdetail = () => {
                       target="_blank"
                       className="text-black text-xl"
                     >
-                      - 316 Anupam Business Hub, Yogi Chowk Road, Opp. Vijay Nagar, Surat, Gujarat 395006
+                      - 316 Anupm Business Hub, Yogi Chowk Road, Opp. Vijay Nagar, Surat, Gujarat 395006
                     </a>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const Contactdetail = () => {
                       <FiMail size={30} className="text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg">Send a Mail</h4>
+                      <h4 className="font-semibold text-xl">Send a Mail</h4>
                     </div>
                   </div>
                   <div className="text">
@@ -80,7 +80,7 @@ const Contactdetail = () => {
                       <FiPhone size={30} className="text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-2xl">Make a Call</h4>
+                      <h4 className="font-semibold text-xl">Make a Call</h4>
                     </div>
                   </div>
                   <div className="text">

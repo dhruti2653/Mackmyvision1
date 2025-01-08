@@ -33,7 +33,7 @@ const BoxComponent = () => {
 
         {/* Box 2: Concept */}
         <div className="flex flex-col items-center sm:flex-row sm:space-x-6 mt-6 sm:mt-0">
-          <div className="group bg-white p-6 rounded-lg border-2 border-blue-500 shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white hover:translate-y-[-10px]">
+          <div className="group bg-white  p-6 rounded-lg border-2 border-blue-500 shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white hover:translate-y-[-10px]">
             <div className="flex justify-center mb-4">
               <div className="border-2 p-4 border-gray-300 rounded-full shadow-xl">
                 <img
@@ -95,5 +95,5 @@ const BoxComponent = () => {
     </div>
   );
 };
-
+  
 export default BoxComponent;
