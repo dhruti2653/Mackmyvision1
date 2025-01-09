@@ -4,7 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const Servicess = () => {
   return (
-    <div className="container mx-auto lg:mt-16 mt-0 px-16">
+    <div className="container mx-auto lg:py-16 py-0 bg-slate-200 rounded-2xl px-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1: Heading */}
         <div className="col-span-1">

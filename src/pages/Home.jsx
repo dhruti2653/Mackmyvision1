@@ -6,6 +6,7 @@ import Service from '../component/Service';
 import Whymmv from '../component/Whymmv';
 import Technology from '../component/Technology';
 import Testimonial from '../component/Testimonial';
+import ScrollButton from '../component/Scrollbutton';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Technology />
       <Whymmv />
       <Testimonial />
+      <ScrollButton/>
     </div>
   )
 }

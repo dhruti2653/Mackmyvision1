@@ -1,36 +1,61 @@
-import React, { useState } from "react";
+import React from "react";
+import Swal from "sweetalert2";
 
 const ClientSupportForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+    formData.append("access_key", "5d675b1d-b939-4b39-9dc5-71e74ecf1898");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Here you would typically send the form data to an API or server
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent successfully!",
+          icon: "success",
+        });
+        event.target.reset(); // Clear the form fields after successful submission
+      } else {
+        Swal.fire({
+          title: "Error!",
+          text: "Something went wrong. Please try again.",
+          icon: "error",
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        title: "Error!",
+        text: "Network issue or invalid form data. Please try again.",
+        icon: "error",
+      });
+    }
   };
 
   return (
-    <div className="client-support-form min-h-screen bg-gray-50 py-16 px-4">
+    <div className="client-support-form min-h-screen bg-gray-50 py-16 px-4 lg:px-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-center text-[#025add] mb-8">
+        <h2 className="text-4xl font-semibold text-center text-[#025add] mb-8">
           Client Support Form
         </h2>
 
         <div className="flex justify-center">
           <form
-            onSubmit={handleSubmit}
-            className="bg-white shadow-lg rounded-lg p-8 w-full max-w-2xl"
+            method="POST"
+            onSubmit={onSubmit}
+            className="bg-white shadow-lg rounded-lg p-12 w-full max-w-3xl"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Form Fields */}
@@ -45,8 +70,6 @@ const ClientSupportForm = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   className="mt-2 p-3 border border-gray-300 rounded-md w-full"
                 />
@@ -63,13 +86,12 @@ const ClientSupportForm = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   className="mt-2 p-3 border border-gray-300 rounded-md w-full"
                 />
               </div>
 
+              {/* Phone Number */}
               <div className="form-group">
                 <label
                   htmlFor="phone"
@@ -81,9 +103,10 @@ const ClientSupportForm = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                   required
+                  pattern="[0-9]{10}"
+                  maxLength="10"
+                  title="Please enter a valid 10-digit phone number"
                   className="mt-2 p-3 border border-gray-300 rounded-md w-full"
                 />
               </div>
@@ -99,8 +122,6 @@ const ClientSupportForm = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   required
                   className="mt-2 p-3 border border-gray-300 rounded-md w-full"
                 />
@@ -116,8 +137,6 @@ const ClientSupportForm = () => {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows="4"
                   className="mt-2 p-3 border border-gray-300 rounded-md w-full"
@@ -136,18 +155,25 @@ const ClientSupportForm = () => {
           </form>
         </div>
       </div>
-
-      {/* Google Map Embed or India Map Image */}
-      <div className="map-container mt-16 w-full " style={{ position: "relative", paddingBottom: "40.25%" }}>
-        {/* Google Maps Embed (example for India) */}
+      {/* Google Map Embed */}
+      <div
+        className="map-container mt-16 w-full"
+        style={{ position: "relative", paddingBottom: "40.25%" }}
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.387973656992!2d73.16454031496398!3d22.307158885318557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5cfd888fba3%3A0x2e2360e00e947611!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1635202567639!5m2!1sen!2sin"
           width="100%"
           height="70%"
-          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: 0,
+          }}
           allowFullScreen
           loading="lazy"
-          className="px-10 -pb-40"
         ></iframe>
       </div>
     </div>
