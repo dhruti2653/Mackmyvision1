@@ -19,29 +19,32 @@ const Form = () => {
       </div>
 
       {/* Form Wrapper */}
-      <div className="bg-white shadow-md rounded-lg p-8 max-w-4xl mx-auto">
+      <div className="bg-gray-100 w-full shadow-md rounded-lg p-8  mx-auto">
         <form className="space-y-6">
           {/* Grid for Inputs */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Name Input */}
             <input
               type="text"
-              className="form-input border border-gray-300 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all"
+              className="form-input border border-gray-400 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all"
               placeholder="Name"
+              required
               aria-label="Name"
             />
             {/* Email Input */}
             <input
               type="email"
-              className="form-input border border-gray-300 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all"
+              className="form-input border border-gray-400 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all"
               placeholder="Email"
+              required
               aria-label="Email"
             />
             {/* Phone Input */}
             <input
               type="tel"
-              className="form-input border border-gray-300 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all"
+              className="form-input border border-gray-400 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all"
               placeholder="Phone"
+              required
               aria-label="Phone"
               onInput={handlePhoneInput} // Restrict input to numbers only
             />
@@ -49,9 +52,10 @@ const Form = () => {
 
           {/* Message Textarea */}
           <textarea
-            className="form-textarea border border-gray-300 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all w-full"
+            className="form-textarea border border-gray-400 rounded-md px-4 py-3 focus:ring focus:ring-blue-300 focus:border-blue-500 transition-all w-full"
             rows="6"
             placeholder="Message"
+            required
           ></textarea>
 
           {/* Submit Button */}

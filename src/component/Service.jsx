@@ -9,7 +9,7 @@ const OurServices = () => {
           Our Services
         </h2>
         <p className=" text-xl lg:px-10 text-gray-600">
-          As one of the leading software development companies, we at Vasundhara have a diverse range of services for our clients, where we operate in these core areas.
+          As one of the leading software development companies, we at MakeMyVision have a diverse range of services for our clients, where we operate in these core areas.
         </p>
       </div>
 
@@ -107,7 +107,7 @@ const OurServices = () => {
             {/* Text Content */}
             <div className="service-text mt-12 text-center">
               <h4 className="text-xl font-semibold">Data Science Development</h4>
-              <p className="mt-3 text-sm text-gray-600">
+              <p className="mt-3 text-sm text-gray-600 sm:text-xs md:text-sm lg:text-base">
               Data science development focuses on analyzing and extracting insights from data using tools like Python, R, and machine learning algorithms. It combines statistical techniques and programming to solve real-world problems in domains like healthcare, finance, and technology.              </p>
               <a
                 className="learn-more mt-3 inline-block text-blue-500 hover:text-blue-700"
@@ -122,7 +122,7 @@ const OurServices = () => {
 
         {/* Second Service */}
         <div className="service-box w-full max-w-sm mx-auto mt-20   rounded-lg shadow-lg ">
-          <div className="service-tech-box bg-green-100 p-6 rounded-lg  pb-11 relative border-2 border-green-200">
+          <div className="service-tech-box bg-green-100 p-6 rounded-lg  pb-12 relative border-2 border-green-200">
             {/* Icon */}
             <div className="flex justify-center absolute -top-8 left-0 right-0 mx-auto">
               <div className="tech-icon bg-green-200 p-4 rounded-xl -rotate-12 hover:rotate-0 transition-transform duration-300">
@@ -138,7 +138,7 @@ const OurServices = () => {
             {/* Text Content */}
             <div className="service-text mt-12 text-center">
               <h4 className="text-xl font-semibold">Web Design  Developers</h4>
-              <p className="mt-3 text-sm text-gray-600">
+              <p className="mt-3 text-sm text-gray-600 sm:text-xs md:text-sm lg:text-base">
 
               Web design focuses on creating visually appealing and user-friendly interfaces for websites, ensuring a seamless user experience. It involves layout planning, color schemes, typography, and responsive design using tools like Figma and Adobe XD.              </p>
               <a

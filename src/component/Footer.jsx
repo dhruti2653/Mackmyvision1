@@ -29,9 +29,10 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
+              required
               className="p-2 rounded-l-md w-64 md:w-80 text-black focus:outline-none"
             />
-            <button className="p-3 bg-blue-500 hover:bg-blue-600 font-medium rounded-r-md">Go!</button>
+            <button  className="p-3 bg-blue-500 hover:bg-blue-600 font-medium rounded-r-md">Go!</button>
           </form>
         </div>
       </div>

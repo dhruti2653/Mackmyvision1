@@ -4,6 +4,7 @@ import About from '../component/About';
 import Whymmv from '../component/Whymmv';
 import AboutUs from '../component/Aboutus';
 import MeetFounders from '../component/Meetfounder';
+import ScrollButton from '../component/Scrollbutton';
 
 
 const AboutPage = () => {
@@ -14,6 +15,7 @@ const AboutPage = () => {
         <MeetFounders />
         <About /> {/* Test rendering About */}
         <Whymmv /> {/* Test rendering Whymmv */}
+        <ScrollButton />
       </div>
     );
   };
