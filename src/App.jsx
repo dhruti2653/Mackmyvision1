@@ -9,7 +9,8 @@ import Aboutpage from './pages/Aboutpage'; // Correct path to Aboutus component
 import Services from './pages/Services';
 import Blogpage from './pages/Blogpage';
 import Contactpage from './pages/Contactpage';
-import Support from './component/Support'
+import Support from './component/Support';
+import MouseEffect from './component/Mouseeffect';
 
 // Home Component with About Section
 // const Home = () => (
@@ -30,6 +31,7 @@ import Support from './component/Support'
 const App = () => {
   return (
     <Router>
+      <MouseEffect />
       <Navbar />
       <Header />
       <main className="">

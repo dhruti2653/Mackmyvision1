@@ -78,7 +78,7 @@ const Slider = () => {
 
             <div className="flex space-x-4 mt-4 lg:mt-10">
               <a
-                href="/contactpage"
+                href="/support"
                 className="px-6 py-2 bg-indigo-500 text-white rounded-md hover:bg-[#025add] transition"
                 data-aos="fade-up"
                 data-aos-delay="800"
