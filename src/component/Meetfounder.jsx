@@ -45,7 +45,7 @@ const MeetFounders = () => {
           {founders.map((founder, index) => (
             <div
               key={index}
-              className="founders relative mt-32 lg:mt-0 rounded-3xl h-[360px] p-5 py-12 shadow-xl flex flex-col items-center"
+              className="founders relative mt-32 lg:mt-0 rounded-3xl h-[360px] p-5 py-12 shadow-xl hover:shadow-2xl flex flex-col items-center"
               style={{
                 backgroundImage: `url(${founder.backgroundImage})`,
                 backgroundSize: "cover",

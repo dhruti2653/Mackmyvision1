@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white shadow-md sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Left: Logo */}
@@ -83,7 +83,7 @@ const Header = () => {
 
         {/* Mobile Navigation Menu (Slide-in for small screens) */}
         <div
-          className={`fixed top-0 right-0 h-full w-3/4 bg-[#0e2336] shadow-lg z-50 transform ${
+          className={`fixed top-0 right-0 h-full w-3/4 bg-[#0e2336] shadow-lg z-40 transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out md:hidden`}
         >
@@ -92,7 +92,7 @@ const Header = () => {
             <div className="flex items-center lg:hidden">
               <Link to={"/"} className="flex items-center">
                 <img
-                  src="../images/logo.jpeg"
+                  src="../images/logo1.jpeg"
                   alt="Logo"
                   className="h-16 w-16 rounded-full"
                 />

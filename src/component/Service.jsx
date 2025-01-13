@@ -2,8 +2,8 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 const OurServices = () => {
-  return (<>
-    <div className="web-review service-height flex flex-wrap justify-center mt-10">
+  return (<>                 
+    <div className="web-review service-height flex flex-wrap justify-center mt-10 z-30">
       <div className="flex flex-col items-center justify-center text-center px-4 sm:px-8 lg:px-12">
         <h2 className="text-4xl font-medium mb-3 text-[#025add]">
           Our Services
@@ -16,11 +16,11 @@ const OurServices = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-32 sm:gap-10 md:gap-20 px-6  ">
         {/* First Service */}
         <div className=" lg:-mt-10 col-xl-4 col-lg-4 col-md-12 col-sm-12">
-          <div className="service-box lg:mt-36 mt-8 w-full max-w-sm mx-auto  rounded-lg shadow-lg overflow-hidden">
+          <div className="service-box lg:mt-36 mt-8 w-full max-w-sm mx-auto  rounded-lg shadow-lg hover:shadow-xl overflow-hidden">
 
 
             {/* Service Box */}
-            <div className="service-tech-box mt-10 bg-pink-100 p-6 rounded-lg relative border-2 border-pink-200">
+            <div className="service-tech-box mt-10 bg-pink-100  p-6 rounded-lg relative border-2 border-pink-200">
               <div className="flex justify-center absolute -top-8 left-0 right-0 mx-auto">
                 <div className="tech-icon bg-pink-200 p-4 rounded-xl -rotate-12 hover:rotate-0 transition-transform duration-300">
                   <img
@@ -54,7 +54,7 @@ const OurServices = () => {
 
         {/* Second Service */}
         <div className="lg:-mt-8 col-xl-4 col-lg-4 col-md-12 col-sm-12">
-          <div className="service-box mt-20 w-full max-w-sm mx-auto  rounded-lg shadow-lg ">
+          <div className="service-box mt-20 w-full max-w-sm mx-auto  rounded-lg shadow-lg hover:shadow-xl ">
             <div className="service-tech-box bg-[#ffe4c2] p-6 rounded-lg relative border-2 border-[#fcd09a]">
               <div className="flex justify-center absolute top-[-30px] left-0 right-0 mx-auto">
                 <div className="tech-icon bg-[#fcd09a] p-4 rounded-xl -rotate-12 hover:rotate-0">
@@ -90,7 +90,7 @@ const OurServices = () => {
       {/* Third Service */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:gap-96 sm:gap-10 px-6 md:gap-44   ">
         {/* First Service */}
-        <div className="service-box w-full max-w-sm mx-auto rounded-lg mt-20 shadow-lg ">
+        <div className="service-box w-full max-w-sm mx-auto rounded-lg mt-20 shadow-lg hover:shadow-xl">
           <div className="service-tech-box bg-purple-100 p-6 rounded-lg relative border-2 border-purple-200">
             {/* Icon */}
             <div className="flex justify-center absolute -top-8 left-0 right-0 mx-auto">
@@ -121,7 +121,7 @@ const OurServices = () => {
         
 
         {/* Second Service */}
-        <div className="service-box w-full max-w-sm mx-auto mt-20   rounded-lg shadow-lg ">
+        <div className="service-box w-full max-w-sm mx-auto mt-20   rounded-lg shadow-lg hover:shadow-xl">
           <div className="service-tech-box bg-green-100 p-6 rounded-lg  pb-12 relative border-2 border-green-200">
             {/* Icon */}
             <div className="flex justify-center absolute -top-8 left-0 right-0 mx-auto">
