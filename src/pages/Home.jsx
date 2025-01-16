@@ -15,7 +15,7 @@ const Home = () => {
       <Aboutus />
       
       <Process />
-      <Service />
+      <Service />  
       <Technology />
       <Whymmv />
       <Testimonial />

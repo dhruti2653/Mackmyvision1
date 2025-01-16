@@ -20,7 +20,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Left: Logo */}
-          <div className="flex items-center space-x-1">
+          <div   className="flex items-center space-x-1">
             <Link to="/">
               <img src="../images/logo.png" alt="Logo" className="h-14 w-20" />
             </Link>
@@ -32,7 +32,7 @@ const Header = () => {
           </div>
 
           {/* Center: Menu for Desktop */}
-          <nav className="hidden font-medium text-xl sm:flex space-x-8">
+          <nav   className="hidden font-medium text-xl sm:flex space-x-8">
             <Link to="/" className={getLinkClasses("/")}>
               Home
             </Link>
@@ -48,8 +48,8 @@ const Header = () => {
           </nav>
 
           {/* Right: Button (Always visible) */}
-          <div className="hidden sm:flex">
-            <Link
+          <div  className="hidden sm:flex">
+            <Link  
               to="/support"
               className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
             >

@@ -7,7 +7,8 @@ const Servicess = () => {
     <div className="container mx-auto lg:py-16 py-0 bg-slate-200 rounded-2xl px-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1: Heading */}
-        <div className="col-span-1">
+        <div data-aos="fade-right"
+        data-aos-delay="1000" className="col-span-1">
           <h2 className="text-2xl md:text-4xl font-medium">
             Options To Fit Your Business Needs
           </h2>
@@ -15,7 +16,8 @@ const Servicess = () => {
         </div>
 
         {/* Column 2: Paragraph */}
-        <div className="col-span-1 space-y-6 lg:pr-8 pr-0 font-medium">
+        <div data-aos="fade-up"
+        data-aos-delay="1000" className="col-span-1 space-y-6 lg:pr-8 pr-0 font-medium">
           <p className="text-base md:text-lg text-gray-700">
             <span className="font-medium text-4xl text-gray-800">O</span>ur approach to technology strategy, security, and support means that no matter what your business needs are, we’ve got you covered.
           </p>
@@ -25,7 +27,8 @@ const Servicess = () => {
         </div>
 
         {/* Column 3: Popular Options */}
-        <div className="col-span-1">
+        <div data-aos="fade-left"
+        data-aos-delay="1000" className="col-span-1">
           <h4 className="text-3xl font-medium mb-4">Popular Options</h4>
           <ul className="list-none pl-0">
             <li className="flex gap-6 mb-1">

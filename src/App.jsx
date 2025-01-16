@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
@@ -11,6 +11,8 @@ import Blogpage from './pages/Blogpage';
 import Contactpage from './pages/Contactpage';
 import Support from './component/Support';
 import MouseEffect from './component/Mouseeffect';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Home Component with About Section
 // const Home = () => (
@@ -29,6 +31,27 @@ import MouseEffect from './component/Mouseeffect';
 
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      easing: "ease-in-out",
+      once: false,
+      mirror: true,
+    });
+
+    const handleScroll = () => {
+      AOS.refresh(); // Refresh AOS dynamically
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
     <Router>
       <MouseEffect />

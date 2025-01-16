@@ -6,11 +6,14 @@ const Contactdetail = () => {
     <div className="container mx-auto px-6 py-12">
       {/* Title and Description Section */}
       <div className="flex flex-col items-center mb-12 text-center">
-        <h2 className="text-4xl font-medium mt-4 text-[#025add] mb-4">Our Direction</h2>
-        <h2 className="text-3xl font-bold mb-4 leading-tight">
+        <h2 data-aos="fade-down"
+        data-aos-delay="1000" className="text-4xl font-medium mt-4 text-[#025add] mb-4">Our Direction</h2>
+        <h2 data-aos="fade-right"
+        data-aos-delay="1000" className="text-3xl font-bold mb-4 leading-tight">
           Get in touch with us. We love talking about digital strategy
         </h2>
-        <p className="text-gray-700 text-xl">
+        <p data-aos="fade-left"
+        data-aos-delay="1000" className="text-gray-700 text-xl">
           So, make the decision to move forward. Commit your decision to paper, just to bring it into focus. Then, go for it!
         </p>
       </div>
@@ -18,7 +21,8 @@ const Contactdetail = () => {
       {/* Image and Contact Details Section */}
       <div className="flex flex-col lg:flex-row lg:pr-16 pr-0 pt-6 lg:items-center mb-12">
         {/* Image Section */}
-        <div className="lg:w-1/2 mb-8 lg:mb-0">
+        <div data-aos="fade-right"
+        data-aos-delay="1000" className="lg:w-1/2 mb-8 lg:mb-0">
           <img
             src="../images/contact.png" // Replace with your image URL
             alt="Our Direction"
@@ -30,7 +34,8 @@ const Contactdetail = () => {
         <div className="lg:w-1/2 w-full mt-8 lg:pl-16 pl-0 lg:mt-0">
           <div className="contact_informaion_content aos-init aos-animate" data-aos="slide-right">
             <ul className="contact-info-links space-y-6">
-              <li>
+              <li data-aos="fade-left"
+        data-aos-delay="1000">
                 <div className="info-box p-4 bg-white shadow-md rounded-lg flex flex-col space-y-4">
                   <div className="box flex items-center space-x-4">
                     <div className="info-icon-box">
@@ -51,7 +56,8 @@ const Contactdetail = () => {
                   </div>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-left"
+        data-aos-delay="1300">
                 <div className="info-box p-4 bg-white shadow-md rounded-lg flex flex-col space-y-4">
                   <div className="box flex items-center space-x-4">
                     <div className="info-icon-box">
@@ -73,7 +79,8 @@ const Contactdetail = () => {
                   </div>
                 </div>
               </li>
-              <li>
+              <li data-aos="fade-left"
+        data-aos-delay="1500">
                 <div className="info-box p-4 bg-white shadow-md rounded-lg flex flex-col space-y-4">
                   <div className="box flex items-center space-x-4">
                     <div className="info-icon-box">

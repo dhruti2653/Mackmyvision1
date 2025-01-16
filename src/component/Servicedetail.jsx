@@ -27,12 +27,14 @@ const ResponsiveSection = () => {
   return (
     <section className="text-black py-10 relative">
       <div className="sticky mt-10 items-center justify-center text-center px-7 lg:px-44">
-        <div className="mb-5">
+        <div   data-aos="fade-down"
+        data-aos-delay="1000" className="mb-5">
           <h2 className="text-4xl font-medium mb-3 text-[#025add]">
             Our Services
           </h2>
         </div>
-        <p className="text-gray-600 text-xl">
+        <p data-aos="fade-up"
+        data-aos-delay="1000" className="text-gray-600 text-xl">
           At MakeMyVision, we specialize in delivering cutting-edge technology solutions tailored to your business needs.
           Our expertise spans web and mobile app development, cloud services, and IT consulting.
           Partner with us to transform your vision into reality with reliable and scalable solutions.
@@ -48,7 +50,8 @@ const ResponsiveSection = () => {
             }`}
           >
             {/* Left Column: Image */}
-            <div className={`flex justify-center items-center ${index % 2 === 0 ? "order-1" : "order-2"}`}>
+            <div data-aos="fade-right"
+        data-aos-delay="1000" className={`flex justify-center items-center ${index % 2 === 0 ? "order-1" : "order-2"}`}>
               <img
                 src={section.image}
                 alt={section.title}
@@ -57,7 +60,8 @@ const ResponsiveSection = () => {
             </div>
 
             {/* Right Column: Content */}
-            <div
+            <div data-aos="fade-left"
+        data-aos-delay="1000"
               className={`flex flex-col justify-center ${
                 index % 2 === 0 ? "order-2" : "order-1"
               } transition-all duration-300 ease-in-out hover:border-2 hover:border-blue-500 hover:shadow-lg p-5 rounded-md`}
