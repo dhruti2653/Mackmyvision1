@@ -13,7 +13,7 @@ const AboutUs = () => {
     
 
       {/* Sub-header */}
-      <p  data-aos="fade-up"
+      <p  data-aos="fade-down"
     data-aos-delay="1000" className="text-center text-3xl font-medium mb-4 text-gray-700">
         <span className="text-blue-600 text-bold">We Create</span> Awesome Stuff
       </p>

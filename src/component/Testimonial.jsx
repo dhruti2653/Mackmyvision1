@@ -33,14 +33,14 @@ const Testimonial = () => {
   return (
     <section className="bg-blue-100 py-10 overflow-hidden">
       <h2
-        data-aos="fade-left"
+        data-aos="fade-down"
         data-aos-delay="1000"
         className="text-4xl font-medium text-center text-[#025add] mb-4"
       >
         Testimonial
       </h2>
       <h2
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="1000"
         className="text-center text-3xl font-semibold mb-6 relative"
       >

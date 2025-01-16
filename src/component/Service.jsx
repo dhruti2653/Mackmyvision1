@@ -7,7 +7,7 @@ const OurServices = () => {
       <div className="web-review service-height flex flex-wrap justify-center mt-10 z-30 overflow-hidden">
         {/* Title Section */}
         <div 
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-delay="1000"
           className="flex flex-col items-center justify-center text-center px-4 sm:px-8 lg:px-12">
           <h2 className="text-4xl font-medium mb-3 text-[#025add]">

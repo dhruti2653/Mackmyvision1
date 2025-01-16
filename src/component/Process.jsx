@@ -1,7 +1,7 @@
 const BoxComponent = () => {
   return (
 <div className="max-w-screen-xl mx-auto mt-10 px-4 py-8">
-<h2  data-aos="fade-up"
+<h2  data-aos="fade-down"
     data-aos-delay="1000" className="text-4xl font-medium text-center mb-3 text-[#025add]">Our Process</h2>
 
       {/* Main container for the boxes */}

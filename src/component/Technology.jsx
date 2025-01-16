@@ -54,15 +54,17 @@ const TechnologiesUsed = () => {
 
   return (
     <div className="container mx-auto px-4 mt-16 mb-9">
-      <div  data-aos="fade-up"
-    data-aos-delay="1000" className="text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 mb-3">
+      <div  className="text-center">
+        <h2  data-aos="fade-down"
+    data-aos-delay="1000" className="text-3xl md:text-4xl font-semibold text-blue-600 mb-3">
           Our Technology
         </h2>
-        <h3 className="text-xl md:text-2xl font-medium mb-4">
+        <h3  data-aos="fade-down"
+    data-aos-delay="1000" className="text-xl md:text-2xl font-medium mb-4">
           Technologies Used for Web Development
         </h3>
-        <p className="text-gray-600 text-sm px-8 md:text-xl mb-8">
+        <p  data-aos="fade-up"
+    data-aos-delay="1000" className="text-gray-600 text-sm px-8 md:text-xl mb-8">
           Web Development requires implementation of the latest technologies, tools, and applications that streamline the prototyping, development, designing, and testing processes.
         </p>
       </div>

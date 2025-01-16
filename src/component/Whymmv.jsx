@@ -38,7 +38,7 @@ const WhyVasundhara = () => {
   return (
     <div className="container mx-auto lg:mb-10 mb-0 p-6">
       {/* Title Section */}
-      <div data-aos="fade-up"
+      <div data-aos="fade-down"
     data-aos-delay="1000" className="flex justify-center mb-8">
         <button
           type="button"
