@@ -47,7 +47,8 @@ const ClientSupportForm = () => {
   return (
     <div className="client-support-form min-h-screen bg-gray-50 py-16 px-4 lg:px-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-semibold text-center text-[#025add] mb-8">
+        <h2 data-aos="fade-down"
+        data-aos-delay="1000" className="text-4xl font-semibold text-center text-[#025add] mb-8">
           Client Support Form
         </h2>
 
@@ -59,14 +60,15 @@ const ClientSupportForm = () => {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Form Fields */}
-              <div className="form-group">
-                <label
+              <div data-aos="fade-right"
+        data-aos-delay="1000" className="form-group">
+                <label 
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700"
                 >
                   Full Name
                 </label>
-                <input
+                <input 
                   type="text"
                   id="name"
                   name="name"
@@ -75,7 +77,8 @@ const ClientSupportForm = () => {
                 />
               </div>
 
-              <div className="form-group">
+              <div data-aos="fade-left"
+        data-aos-delay="1000" className="form-group">
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
@@ -92,7 +95,8 @@ const ClientSupportForm = () => {
               </div>
 
               {/* Phone Number */}
-              <div className="form-group">
+              <div data-aos="fade-right"
+        data-aos-delay="1300" className="form-group">
                 <label
                   htmlFor="phone"
                   className="block text-sm font-medium text-gray-700"
@@ -111,7 +115,8 @@ const ClientSupportForm = () => {
                 />
               </div>
 
-              <div className="form-group">
+              <div data-aos="fade-left"
+        data-aos-delay="1300" className="form-group">
                 <label
                   htmlFor="subject"
                   className="block text-sm font-medium text-gray-700"
@@ -127,7 +132,8 @@ const ClientSupportForm = () => {
                 />
               </div>
 
-              <div className="form-group md:col-span-2">
+              <div data-aos="fade-up"
+        data-aos-delay="1500" className="form-group md:col-span-2">
                 <label
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700"
@@ -144,7 +150,8 @@ const ClientSupportForm = () => {
               </div>
             </div>
 
-            <div className="mt-6 text-center">
+            <div data-aos="fade-up"
+        data-aos-delay="1000" className="mt-6 text-center">
               <button
                 type="submit"
                 className="px-6 py-3 bg-blue-600 text-white text-lg font-medium rounded-md w-full sm:w-auto hover:bg-blue-700 transition duration-300"
@@ -156,7 +163,8 @@ const ClientSupportForm = () => {
         </div>
       </div>
       {/* Google Map Embed */}
-      <div
+      <div data-aos="fade-up"
+        data-aos-delay="1000"
         className="map-container mt-16 w-full"
         style={{ position: "relative", paddingBottom: "40.25%" }}
       >

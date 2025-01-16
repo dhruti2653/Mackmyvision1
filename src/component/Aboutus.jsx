@@ -13,20 +13,18 @@ const ImageColumn = () => {
   const circles = [
     { id: 1, className: "bg-blue-600", cx: 0, cy: -200, r: 17, innerClassName: "bg-white", innerRadius: 15 },
     { id: 2, className: "bg-blue-400", cx: 250, cy: -50, r: 13 },
-    { id: 3, className: "bg-blue-400", cx: 80, cy: 300, r: 23, innerClassName: "bg-white", innerRadius: 19 },
+    { id: 3, className: "bg-blue-400", cx: 80, cy: 280, r: 23, innerClassName: "bg-white", innerRadius: 19 },
     { id: 4, className: "bg-blue-800 ", cx: -250, cy: 200, r: 10 },
   ];
 
 
   return (
     <div
-    data-aos="fade-up"
-    data-aos-delay="1000"
     className="flex flex-col lg:flex-row mt-10 items-center gap-16 px-6 lg:px-16 overflow-hidden">
       {/* Content Section */}
       <div 
        data-aos="fade-right"
-       data-aos-delay="1500" className="lg:w-1/2 text-center lg:text-left lg:pl-10">
+       data-aos-delay="1000" className="lg:w-1/2 text-center lg:text-left lg:pl-10">
         <h2 className="text-4xl font-medium text-[#025add] mb-4">About Us</h2>
         <h3 className="lg:text-3xl text-xl font-medium mb-4">
           Manage conversations with leads and customers at scale
@@ -60,7 +58,7 @@ const ImageColumn = () => {
       {/* SVG and Image Section */}
       <div 
        data-aos="fade-left"
-       data-aos-delay="1500"
+       data-aos-delay="1000"
        className="relative flex justify-center items-center w-full h-screen lg:w-1/2">
         {/* Outer Border */}
         <div className="absolute w-[80%] h-[70%] lg:w-[480px] lg:h-[400px] rounded-full border-[20px] border-[#025ADD] shadow-xl"></div>

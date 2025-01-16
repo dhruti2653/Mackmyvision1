@@ -5,15 +5,14 @@ const CustomPostItem = ({ title, description, image, link }) => {
     <div
       className="custom-posts--item w-full sm:w-1/2 lg:w-1/3 p-4 group"
       data-aos="fade-up"
-      data-aos-duration="600"
-      data-aos-delay="100"
+      data-aos-duration="1000"
     >
       <a
         href={link}
         className="custom-posts--link block relative overflow-hidden rounded-lg"
       >
         {/* Image Section Above the Title */}
-        <div className="custom-posts--thumb relative h-64">
+        <div  className="custom-posts--thumb relative h-64">
           <img
             loading="lazy"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"

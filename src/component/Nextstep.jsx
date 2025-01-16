@@ -3,14 +3,16 @@ import { FaHandshake, FaClipboardList, FaFileInvoiceDollar } from 'react-icons/f
 const NextSteps = () => {
   return (
     <div className="container mx-auto px-4 py-8  pb-20">
-      <div className="section-heading text-center mb-8">
-        <h2 className="text-3xl font-semibold">So What Next?</h2>
+      <div data-aos="fade-down"
+        data-aos-delay="1000" className="section-heading text-center mb-8">
+        <h2  className="text-3xl font-semibold">So What Next?</h2>
       </div>
 
       {/* Responsive Flex Container */}
       <div className="flex flex-col md:flex-row justify-center items-stretch gap-8">
         {/* Box 1 */}
-        <div className="next-design-one w-full md:w-1/3 flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
+        <div data-aos="fade-right"
+        data-aos-delay="1000" className="next-design-one w-full md:w-1/3 flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
           <div className="next-icon mb-4">
             <FaHandshake className="text-blue-500 w-12 h-12" />
           </div>
@@ -21,7 +23,8 @@ const NextSteps = () => {
         </div>
 
         {/* Box 2 */}
-        <div className="next-design-two w-full md:w-1/3 flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
+        <div data-aos="fade-up"
+        data-aos-delay="1300" className="next-design-two w-full md:w-1/3 flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
           <div className="next-icon mb-4">
             <FaClipboardList className="text-blue-500 w-12 h-12" />
           </div>
@@ -32,7 +35,8 @@ const NextSteps = () => {
         </div>
 
         {/* Box 3 */}
-        <div className="next-design-three w-full md:w-1/3 flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
+        <div data-aos="fade-left"
+        data-aos-delay="1500" className="next-design-three w-full md:w-1/3 flex flex-col items-center text-center p-6 border rounded-lg shadow-lg">
           <div className="next-icon mb-4">
             <FaFileInvoiceDollar className="text-blue-500 w-12 h-12" />
           </div>

@@ -13,19 +13,22 @@ const AboutUs = () => {
     
 
       {/* Sub-header */}
-      <p className="text-center text-3xl font-medium mb-4 text-gray-700">
+      <p  data-aos="fade-up"
+    data-aos-delay="1000" className="text-center text-3xl font-medium mb-4 text-gray-700">
         <span className="text-blue-600 text-bold">We Create</span> Awesome Stuff
       </p>
 
       {/* Description */}
-      <p className="text-center text-lg text-gray-700 mb-10 px-4 lg:px-20">
+      <p  data-aos="fade-up"
+    data-aos-delay="1000" className="text-center text-lg text-gray-700 mb-10 px-4 lg:px-20">
         We are a <span className="text-blue-600 font-semibold">Creative Team</span> located in Gujarat, India. We just started with a single head, and now we have an experienced team, as well as partnerships with some amazing brands.
       </p>
 
       {/* Row for Boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Vision Box */}
-        <div className="flex items-center bg-white shadow-lg rounded-lg p-6">
+        <div  data-aos="fade-right"
+    data-aos-delay="1000" className="flex items-center bg-white shadow-lg rounded-lg p-6">
           {/* GIF */}
           <div className="w-24 h-24 mr-4 flex-shrink-0">
             <img
@@ -46,7 +49,8 @@ const AboutUs = () => {
         </div>
 
         {/* Mission Box */}
-        <div className="flex items-center bg-white shadow-lg rounded-lg p-6">
+        <div  data-aos="fade-up"
+    data-aos-delay="1300" className="flex items-center bg-white shadow-lg rounded-lg p-6">
           {/* GIF */}
           <div className="w-24 h-24 mr-4 flex-shrink-0">
             <img
@@ -67,7 +71,8 @@ const AboutUs = () => {
         </div>
 
         {/* Client Support Box */}
-        <div className="flex items-center bg-white shadow-lg rounded-lg p-6">
+        <div  data-aos="fade-left"
+    data-aos-delay="1500" className="flex items-center bg-white shadow-lg rounded-lg p-6">
           {/* Video */}
           <div className="w-24 h-24 mr-4 flex-shrink-0">
           <img

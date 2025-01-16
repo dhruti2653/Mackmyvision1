@@ -9,7 +9,8 @@ const Footer = () => {
       {/* Top Section - Logo and Newsletter */}
       <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-600 pb-8">
         {/* Left - Logo */}
-        <div className="flex items-center space-x-2">
+        <div data-aos="fade-right"
+    data-aos-delay="1000" className="flex items-center space-x-2">
           <Link to="/">
             <img src="../images/logo1.jpeg" alt="Logo" className="h-12 w-24" />
           </Link>
@@ -22,10 +23,12 @@ const Footer = () => {
         {/* Right - Newsletter Text and Input */}
         <div className="mt-4 md:mt-0 flex flex-col md:flex-row space-x-6 justify-end items-right w-full">
           {/* Left Side - Text */}
-          <div className="flex text-xl items-center font-medium mb-2 md:mb-0">Signup Our Newsletter</div>
+          <div  data-aos="fade-right"
+    data-aos-delay="1000" className="flex text-xl items-center font-medium mb-2 md:mb-0">Signup Our Newsletter</div>
 
           {/* Right Side - Form */}
-          <form className="flex mt-2 md:mt-0">
+          <form  data-aos="fade-left"
+    data-aos-delay="1000" className="flex mt-2 md:mt-0">
             <input
               type="email"
               placeholder="Enter your email"
@@ -40,7 +43,8 @@ const Footer = () => {
       {/* Middle Section - 4 Columns */}
       <div className="grid grid-cols-1 md:grid-cols-6 gap-7 pt-8 pb-4">
         {/* Column 1 - Detail Part - 50% Width (spans 3 columns on larger screens) */}
-        <div className="col-span-1 md:col-span-3">
+        <div  data-aos="fade-right"
+    data-aos-delay="1000" className="col-span-1 md:col-span-3">
           <p className="text-xl text-gray-400">
            MakeMyVision is a leading provider of cutting-edge information technology services and innovative solutions. We are committed to delivering transformative IT services that empower businesses to thrive in the digital age.          </p>
         </div>
@@ -49,19 +53,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:col-span-2">
           <div className="col-span-1">
             <ul className="space-y-2 list-none">
-              <li className="relative pl-4 space-x-1">
+              <li data-aos="fade-right"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/" className="text-gray-400 hover:text-white">Home</a>
               </li>
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-right"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/aboutpage" className="text-gray-400 hover:text-white">About</a>
               </li>
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-right"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/services" className="text-gray-400 hover:text-white">Services</a>
               </li>
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-right"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/contactpage" className="text-gray-400 hover:text-white">Contact</a>
               </li>
@@ -70,19 +78,23 @@ const Footer = () => {
 
           <div className="col-span-1">
             <ul className="space-y-2 list-none">
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-left"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/services" className="text-gray-400 hover:text-white">Web Development</a>
               </li>
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-left"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/4 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/services" className="text-gray-400 hover:text-white">Mobile App Development</a>
               </li>
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-left"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/4 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/services" className="text-gray-400 hover:text-white">Data Science Development</a>
               </li>
-              <li className="relative pl-4 space-x-1">
+              <li  data-aos="fade-left"
+    data-aos-delay="1000" className="relative pl-4 space-x-1">
                 <span className="absolute left-0 top-1/4 transform -translate-y-1/2 text-gray-400">→</span>
                 <a href="/services" className="text-gray-400 hover:text-white">Web Design Developers</a>
               </li>
@@ -93,19 +105,23 @@ const Footer = () => {
         {/* Column 3 - Social Icons */}
         <div className="col-span-1 md:col-span-1">
           <div className="flex flex-col space-y-4">
-            <a href="https://www.facebook.com/?_rdr" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
+            <a  data-aos="fade-left"
+    data-aos-delay="1000" href="https://www.facebook.com/?_rdr" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
               <span className="text-sm">Facebook</span>
             </a>
-            <a href="https://www.google.com/" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
+            <a  data-aos="fade-left"
+    data-aos-delay="1000" href="https://www.google.com/" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
               <FontAwesomeIcon icon={faGoogle} size="lg" />
               <span className="text-sm">Google</span>
             </a>
-            <a href="https://in.linkedin.com/" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
+            <a  data-aos="fade-left"
+    data-aos-delay="1000" href="https://in.linkedin.com/" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
               <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
               <span className="text-sm">LinkedIn</span>
             </a>
-            <a href="https://in.linkedin.com/" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
+            <a  data-aos="fade-left"
+    data-aos-delay="1000" href="https://in.linkedin.com/" className="flex items-center space-x-2 text-gray-400 hover:text-blue-600">
               <FontAwesomeIcon icon={faTwitter} size="lg" />
               <span className="text-sm">Twitter</span>
             </a>
@@ -117,12 +133,14 @@ const Footer = () => {
       <div className="pb-16 flex justify-start">
         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <p className="text-[16px] text-gray-400">
+            <p  data-aos="fade-right"
+    data-aos-delay="1000" className="text-[16px] text-gray-400">
               <strong>Address:</strong> 123 Street, City, Country
             </p>
           </div>
           <div>
-            <p className="text-[16px] text-gray-400">
+            <p  data-aos="fade-right"
+    data-aos-delay="1000" className="text-[16px] text-gray-400">
               <strong>Phone:</strong> +1 234 567 890
             </p>
           </div>
@@ -132,7 +150,7 @@ const Footer = () => {
       {/* Bottom Section - Copyright and Links */}
       <div className="flex flex-col md:flex-row justify-between border-t border-gray-600 py-4">
         {/* Left side - Copyright */}
-        <div className="text-sm text-gray-400">
+        <div  className="text-sm text-gray-400">
           <p> Copyright © 2024 . MakeMyVision Technology | All Rights Reserved.</p>
         </div>
 
