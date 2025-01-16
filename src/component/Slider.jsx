@@ -19,12 +19,14 @@ const Slider = () => {
       {/* Repulse Circle Background (optional) */}
       <div id="repulse-circle-div" className="absolute inset-0"></div>
 
-      <div className="container mx-auto relative pt-10x px-4">
+      <div data-aos="fade-left"
+                data-aos-delay="1000" 
+                className="container mx-auto relative pt-10x px-4" >
         <div className="flex flex-col lg:flex-row lg:items-start justify-center lg:justify-start space-y-6 lg:space-y-0">
           <div className="lg:w-7/12 lg:ml-auto text-white p-8  flex flex-col justify-start items-start">
             <h2
               className="text-2xl lg:text-[45px] font-medium mb-4"
-              data-aos="fade-up"
+              data-aos="fade-left"
             >
               Delivering Superior Services<br></br>
               <span className="lg:text-[32px] text-[24px] text-indigo-500">IT Solutions.</span>
@@ -38,7 +40,7 @@ const Slider = () => {
             </h2>
             <p
               className="text-gray-300 mb-8 font-bold"
-              data-aos="fade-up"
+              data-aos="fade-left"
               data-aos-delay="400"
             >
               You can easily change any design to your own. It is also a  highly<br></br>
