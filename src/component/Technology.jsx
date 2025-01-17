@@ -53,7 +53,7 @@ const TechnologiesUsed = () => {
   }[activeTab];
 
   return (
-    <div className="container mx-auto px-4 mt-16 mb-9">
+    <div className="container w-full overflow-hidden mx-auto px-4 mt-16 mb-9">
       <div  className="text-center">
         <h2  data-aos="fade-down"
     data-aos-delay="1000" className="text-3xl md:text-4xl font-semibold text-blue-600 mb-3">
@@ -70,8 +70,8 @@ const TechnologiesUsed = () => {
       </div>
 
       {/* Tabs */}
-      <ul data-aos="fade-left"
-    data-aos-delay="1000" className="flex justify-center mb-6 lg:mx-0 px-5 space-x-4 md:space-x-28 border-b-2 border-gray-200 ">
+      <ul data-aos="fade-right"
+    data-aos-delay="1000" className="flex justify-center mb-6 lg:mx-0 px-0 space-x-4 md:space-x-28 border-b-2 border-gray-200 ">
         {['frontend', 'backend', 'database', 'infrastructure'].map((tab) => (
           <li
             key={tab}
@@ -88,7 +88,7 @@ const TechnologiesUsed = () => {
       </ul>
 
       {/* Technology Grid */}
-      <div data-aos="fade-right"
+      <div data-aos="fade-left"
     data-aos-delay="1000" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-10 lg:grid-cols-6 gap-6">
         {technologiesToShow.map((tech) => (
           <div key={tech.name} className="text-center">

@@ -24,7 +24,7 @@ const ImageColumn = () => {
       {/* Content Section */}
       <div 
        data-aos="fade-right"
-       data-aos-delay="1000" className="lg:w-1/2 text-center lg:text-left lg:pl-10">
+       data-aos-delay="1000" className="lg:w-1/2 text-center lg:text-left ">
         <h2 className="text-4xl font-medium text-[#025add] mb-4">About Us</h2>
         <h3 className="lg:text-3xl text-xl font-medium mb-4">
           Manage conversations with leads and customers at scale
@@ -61,7 +61,7 @@ const ImageColumn = () => {
        data-aos-delay="1000"
        className="relative flex justify-center items-center w-full h-screen lg:w-1/2">
         {/* Outer Border */}
-        <div className="absolute w-[80%] h-[70%] lg:w-[480px] lg:h-[400px] rounded-full border-[20px] border-[#025ADD] shadow-xl"></div>
+        <div className="absolute w-[80%] h-[70%] lg:w-[480px] lg:h-[400px] rounded-full border-[22px] border-[#025ADD] shadow-xl"></div>
 
         {/* Image */}
         <div className="relative w-[75%] h-[65%] lg:w-[460px] lg:h-[380px] overflow-hidden rounded-full transition-transform duration-500 hover:scale-95">

@@ -5,7 +5,10 @@ const Slider = () => {
     <section
       id="hero"
       className="relative w-full h-screen bg-cover bg-center overflow-hidden flex items-center"
-      style={{ backgroundImage: `url('/images/hero-bg.png')`, backgroundColor: "#025add" }}
+      style={{
+        backgroundImage: `url('/images/hero-bg.png')`,
+        backgroundColor: "#025add",
+      }}
     >
       {/* Particle Background (optional) */}
       {/* <div id="particles-js" className="absolute inset-0 overflow-hidden">
@@ -24,20 +27,26 @@ const Slider = () => {
         <div className="flex flex-col lg:flex-row lg:items-start justify-center lg:justify-start space-y-6 lg:space-y-0">
           <div className="lg:w-7/12 lg:ml-auto text-white p-8 flex flex-col justify-start items-start">
             <h2 className="text-2xl lg:text-[45px] font-medium mb-4">
-              Delivering Superior Services<br />
-              <span className="lg:text-[32px] text-[24px] text-indigo-500">IT Solutions.</span>
+              Delivering Superior Services
+              <br />
+              <span className="lg:text-[32px] text-[24px] text-indigo-500">
+                IT Solutions.
+              </span>
               <span
                 className="ml-2 w-3 h-3 inline-block rounded-full animate-ping bg-indigo-500"
                 data-aos="fade-right"
                 data-aos-delay="800"
-              >.</span>
+              >
+                .
+              </span>
             </h2>
             <p
               className="text-gray-300 mb-8 font-bold"
               data-aos="fade-left"
               data-aos-delay="600"
             >
-              You can easily change any design to your own. It is also a highly<br />
+              You can easily change any design to your own. It is also a highly
+              <br />
               customizable SEO-friendly template.
             </p>
 
@@ -46,7 +55,9 @@ const Slider = () => {
                 <h1 className="text-5xl md:text-6xl font-bold">
                   100<span className="text-blue-500">%</span>
                 </h1>
-                <p className="text-xl md:text-2xl font-semibold mt-2">Customers Satisfaction</p>
+                <p className="text-xl md:text-2xl font-semibold mt-2">
+                  Customers Satisfaction
+                </p>
               </div>
               <div className="absolute bottom-0 left-0 w-full h-1 bg-gray-700">
                 <div className="h-1 bg-blue-500 w-1/4"></div>

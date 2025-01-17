@@ -2,7 +2,6 @@ import React from 'react';
 // import Service from '../component/Service';
 import Technology from '../component/Technology';
 import Servicess from '../component/Servicess';
-import ScrollButton from '../component/Scrollbutton';
 import ResponsiveSection from '../component/Servicedetail';
 // import HistorySection from '../component/History';
 
@@ -14,7 +13,6 @@ const Services = () => {
     <ResponsiveSection />
       <Servicess />
       <Technology />
-      <ScrollButton />
     </div>
   )
 }

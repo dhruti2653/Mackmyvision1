@@ -43,7 +43,7 @@ const AboutUs = () => {
               Our <span className="text-blue-600">Vision</span>
             </h4>
             <p className="text-gray-600 text-lg mt-2">
-              Our aim is to empower your business through our knowledge and experiences. We strive to let your brand spread worldwide through WebMint Infotech.
+              Our aim is to empower your business through our knowledge and experiences. We strive to let your brand spread worldwide through MakeMyVision Infotech.
             </p>
           </div>
         </div>
