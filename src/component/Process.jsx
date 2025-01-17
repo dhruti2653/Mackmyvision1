@@ -1,3 +1,5 @@
+import React from "react";
+
 const BoxComponent = () => {
   return (
 <div className="max-w-screen-xl mx-auto mt-10 px-4 py-8">
@@ -34,7 +36,7 @@ const BoxComponent = () => {
         </div>
 
         {/* Box 2: Concept */}
-        <div data-aos="fade-up"
+        <div data-aos="fade-down"
     data-aos-delay="1000" className="flex flex-col items-center sm:flex-row sm:space-x-6 mt-6 sm:mt-0">
           <div   className="group bg-white p-6 md:w-60 sm:w-72 lg:w-52 h-64 rounded-lg border-2 border-blue-500 shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white hover:translate-y-[-10px]">
             <div className="flex justify-center mb-4">
@@ -53,7 +55,7 @@ const BoxComponent = () => {
           </div>
 
           {/* Dotted Line */}
-          <div  data-aos="fade-up"
+          <div  data-aos="fade-down"
     data-aos-delay="1000" className="hidden sm:block w-full sm:w-auto">
             <span className="text-gray-500 text-xl">..................</span>
           </div>
@@ -86,7 +88,7 @@ const BoxComponent = () => {
         </div>
 
         {/* Box 4: Test */}
-        <div  data-aos="fade-up"
+        <div  data-aos="fade-down"
     data-aos-delay="1000" className="flex flex-col items-center sm:flex-row sm:space-x-6 mt-6 sm:mt-0">
           <div className="group bg-white p-6 md:60 sm:w-72 lg:w-52 h-64 rounded-lg border-2 border-blue-500 shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white hover:translate-y-[-10px]">
             <div className="flex justify-center mb-4">

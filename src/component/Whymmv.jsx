@@ -23,7 +23,7 @@ const WhyVasundhara = () => {
     {
       title: "Value for Money",
       description:
-        "Vasundhara provides services at affordable and competitive rates with fast delivery.",
+        "MakeMyVision provides services at affordable and competitive rates with fast delivery.",
       bgColor: "bg-purple-100",
       imgSrc: "../images/value-for-money.gif",
       imgAlt: "Value for Money Icon",
@@ -36,9 +36,9 @@ const WhyVasundhara = () => {
   };
 
   return (
-    <div className="container mx-auto lg:mb-10 mb-0 p-6">
+    <div className="container w-full overflow-hidden mx-auto lg:mb-10 mb-0 p-6">
       {/* Title Section */}
-      <div data-aos="fade-down"
+      <div data-aos="fade-up"
     data-aos-delay="1000" className="flex justify-center mb-8">
         <button
           type="button"
@@ -58,7 +58,7 @@ const WhyVasundhara = () => {
     alt="Arrow Six"
   />
   <img 
-  data-aos="fade-up"
+  data-aos="fade-down"
   data-aos-delay="1000"
     src="/images/5.png"
     className="hidden lg:block lg:max-w-7 h-32 object-contain transform hover:scale-110 transition-transform duration-300"

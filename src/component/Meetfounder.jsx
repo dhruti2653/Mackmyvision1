@@ -5,7 +5,7 @@ const MeetFounders = () => {
   const founders = [
     {
       name: "Priyank Savani",
-      position: "CEO",
+      position: "CEO",  
       imgSrc:
         "https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/custom-post-thumb-1.jpg",
       facebook: "https://www.facebook.com",
@@ -13,7 +13,7 @@ const MeetFounders = () => {
       backgroundImage: "../images/founders-bg.png",
     },
     {
-      name: "Ankur Lakhani",
+      name: "Riddhi Kush",
       position: "CTO",
       imgSrc:
         "https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/custom-post-thumb-1.jpg",
@@ -22,8 +22,8 @@ const MeetFounders = () => {
       backgroundImage: "../images/founders-bg.png",
     },
     {
-      name: "Ankur Lakhani",
-      position: "CTO",
+      name: "Dhruti Hirapara",
+      position: "DEVELOPER",
       imgSrc:
         "https://fieldedge.com/wp-content/themes/fieldedge/assets/dist/images/photo/custom-post-thumb-1.jpg",
       facebook: "https://www.facebook.com",
