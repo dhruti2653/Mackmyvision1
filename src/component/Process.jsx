@@ -9,7 +9,7 @@ const BoxComponent = () => {
       {/* Main container for the boxes */}
       <div className="flex flex-col sm:flex-row sm:flex-wrap sm:space-x-6 mt-7 items-center sm:justify-between">
       {/* Box 1: Search */}
-        <div  data-aos="fade-up"
+        <div  data-aos="fade-right"
     data-aos-delay="1000"   
      className="flex flex-col items-center sm:flex-row sm:space-x-6 mt-4 sm:mt-0">
       <div className="group bg-white p-6 w-full sm:w-60 lg:w-52 h-64 rounded-lg border-2 border-blue-500 shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white hover:translate-y-[-10px]">
@@ -88,7 +88,7 @@ const BoxComponent = () => {
         </div>
 
         {/* Box 4: Test */}
-        <div  data-aos="fade-down"
+        <div  data-aos="fade-left"
     data-aos-delay="1000" className="flex flex-col items-center sm:flex-row sm:space-x-6 mt-6 sm:mt-0">
           <div className="group bg-white p-6 md:60 sm:w-72 lg:w-52 h-64 rounded-lg border-2 border-blue-500 shadow-md transition-all duration-300 hover:bg-blue-500 hover:text-white hover:translate-y-[-10px]">
             <div className="flex justify-center mb-4">

@@ -9,7 +9,7 @@ import Testimonial from '../component/Testimonial';
 
 const Home = () => {
   return (
-    <div>
+    <div className=' w-full overflow-hidden'>
       <Slider />
       <Aboutus />
       
