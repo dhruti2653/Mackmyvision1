@@ -148,6 +148,15 @@ const Header = () => {
             >
               Contact Us
             </Link>
+            <Link  
+              to="/support"
+              className={`w-full py-2 hover:text-[#F76B00] hover:underline ${
+                location.pathname === "/support" ? "text-[#F76B00]" : "text-white"
+              }`}
+              onClick={toggleMenu}
+            >
+              Get Support
+            </Link>
           </nav>
         </div>
       </div>

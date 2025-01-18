@@ -7,7 +7,7 @@ import ResponsiveSection from '../component/Servicedetail';
 
 const Services = () => {
   return (
-    <div>
+    <div className='w-full overflow-hidden'>
       {/* <Service /> */}
     {/* <HistorySection /> */}
     <ResponsiveSection />

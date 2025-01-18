@@ -7,7 +7,7 @@ import MeetFounders from "../component/Meetfounder";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <AboutUs />
       {/* <Abouts /> Test rendering Abouts */}
       <MeetFounders />

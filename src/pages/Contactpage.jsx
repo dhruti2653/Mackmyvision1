@@ -5,7 +5,7 @@ import Form from '../component/Form'
 
 const Contactpage = () => {
   return (
-    <div>
+    <div className='w-full overflow-hidden'>
       <Contactdetail />
       <Form />
      <NextSteps />

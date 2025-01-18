@@ -29,7 +29,7 @@ const ResponsiveSection = () => {
   ];
 
   return (
-    <section className="text-black py-10 relative">
+    <section className="w-full overflow-hidden text-black py-10 relative">
       <div className="sticky mt-10 items-center justify-center text-center px-7 lg:px-44">
         <div data-aos="fade-down" data-aos-delay="1000" className="mb-5">
           <h2 className="text-4xl font-medium mb-3 text-[#025add]">
